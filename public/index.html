@@ -18,18 +18,18 @@
   <script src="app/components/search-results.js"></script>
 </head>
 <body ng-app="SearchBroadcastApp">
-  <div id="container" class="container">
-    <div id="nav">
-      <div class="row">
-        <div class="col-xs-12">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li class="search"><search-bar></search-bar></li>
-          </ul>
-        </div>
+  <div class="container">
+    <div id="nav" class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li class="search"><search-bar></search-bar></li>
+        </ul>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div ui-view></div>
   </div>
 </body>

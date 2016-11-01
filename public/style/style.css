@@ -2,8 +2,9 @@ body {
   background-color: lightblue;
 }
 
-#container {
+.container {
   background-color: white;
+  margin-bottom: 1em;
 }
 
 #nav ul {
