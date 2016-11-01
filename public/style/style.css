@@ -1,5 +1,6 @@
-body {
+html, body {
   background-color: lightblue;
+  height: 100%;
 }
 
 .container {
@@ -9,14 +10,18 @@ body {
 
 #nav ul {
   padding-left: 0;
-  padding-top: 1em;
 }
 
 #nav li {
   display: inline-block;
   padding-left: 0;
+
 }
 
 #nav .search {
   float: right;
+}
+
+#results {
+  min-height: 400px;
 }
