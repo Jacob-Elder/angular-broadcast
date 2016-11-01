@@ -1,0 +1,13 @@
+<a href="/"><< Home</a>
+
+<h1>{{post.post.title}}</h1>
+<p>
+  {{post.post.content}}
+</p>
+
+<p>{{post.post.createdAt | date : 'short' }}</p>
+<p>{{post.post.createdAt | date : 'MMMM MMM MM' }}</p>
+<p>{{post.post.createdAt | date : 'EEEE a ss:hh' }}</p>
+<p>{{post.post.createdAt | date : 'a hh:ss' }}</p>
+
+<a ng-href="/post/{{post.post._id}}/edit">edit</a>

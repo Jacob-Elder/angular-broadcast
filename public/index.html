@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mean Blog</title>
+  <base href="/">
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="/style/style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/services.js"></script>
+  <script src="app/filters.js"></script>
+  <script src="app/pages/home/home.js"></script>
+  <script src="app/pages/post/post.js"></script>
+  <script src="app/components/search-bar.js"></script>
+  <script src="app/components/search-results.js"></script>
+</head>
+<body ng-app="MeanBlogApp">
+  <div id="container" class="container">
+    <div id="nav">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li class="search"><search-bar></search-bar></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div ui-view></div>
+  </div>
+</body>
+</html>

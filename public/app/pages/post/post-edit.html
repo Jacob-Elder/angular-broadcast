@@ -1,0 +1,14 @@
+<a href="/"><< Home</a>
+
+<form ng-submit="post.updatePost()">
+  <div>
+    <input ng-model="post.post.title"></input>
+  </div>
+
+  <div>
+    <textarea ng-model="post.post.content" rows="6" cols="40">
+    </textarea>
+  </div>
+
+  <button type="submit">save</button>
+</form>

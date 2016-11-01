@@ -1,0 +1,12 @@
+<p class="text-center" ng-if="results.loading">
+  <img src="/img/loading.gif" />
+</p>
+
+<p ng-if="!results.loading && results.results.length === 0">
+  No results
+</p>
+
+
+<ul ng-if="!results.loading && results.results.length > 0">
+  <li ng-repeat="result in results.results">{{result}}</li>
+</ul>

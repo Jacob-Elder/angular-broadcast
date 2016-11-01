@@ -1,0 +1,21 @@
+body {
+  background-color: lightblue;
+}
+
+#container {
+  background-color: white;
+}
+
+#nav ul {
+  padding-left: 0;
+  padding-top: 1em;
+}
+
+#nav li {
+  display: inline-block;
+  padding-left: 0;
+}
+
+#nav .search {
+  float: right;
+}
