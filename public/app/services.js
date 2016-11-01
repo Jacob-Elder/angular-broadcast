@@ -1,4 +1,4 @@
-angular.module('MeanBlogApp')
+angular.module('SearchBroadcastApp')
 .service('PostService', ['$http', function($http) {
   this.getAllPosts = function(callback) {
     $http({

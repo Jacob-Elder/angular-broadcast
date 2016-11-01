@@ -1,4 +1,4 @@
-angular.module('MeanBlogApp')
+angular.module('SearchBroadcastApp')
 .filter('reverse', function() {
     return function(input) {
       return input.reverse();

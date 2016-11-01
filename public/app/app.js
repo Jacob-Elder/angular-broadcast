@@ -1,4 +1,4 @@
-angular.module('MeanBlogApp', ['ui.router'])
+angular.module('SearchBroadcastApp', ['ui.router'])
 .config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise('/');
 

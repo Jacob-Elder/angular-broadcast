@@ -1,5 +1,5 @@
 (function() {
-  angular.module('MeanBlogApp')
+  angular.module('SearchBroadcastApp')
   .component('post', {
     templateUrl: 'app/pages/post/post.html',
     controller: PostCtrl,

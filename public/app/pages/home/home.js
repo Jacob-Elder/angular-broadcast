@@ -1,5 +1,5 @@
 (function() {
-  angular.module('MeanBlogApp')
+  angular.module('SearchBroadcastApp')
   .component('home', {
     templateUrl: 'app/pages/home/home.html',
     controller: HomeCtrl,
