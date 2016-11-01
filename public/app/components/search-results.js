@@ -6,16 +6,20 @@
     controllerAs: 'results'
   });
 
-  function ResultsCtrl($scope) {
+  function ResultsCtrl($scope, $timeout) {
     var results = this;
     results.results = [];
-    results.loading = true;
+    results.loading = false;
 
     $scope.$on("search", function(event, params) {
-      results.results = params.q.split(" ");
-      results.loading = false;
-    })
+      results.loading = true;
+      $timeout(function() {
+        console.log("done.")
+        results.results = params.q.split(" ");
+        results.loading = false;
+      }, 1000);
+    });
   }
 
-  ResultsCtrl.$inject = ['$scope'];
+  ResultsCtrl.$inject = ['$scope', '$timeout'];
 })();

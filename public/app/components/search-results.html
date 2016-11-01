@@ -8,5 +8,5 @@
 
 
 <ul ng-if="!results.loading && results.results.length > 0">
-  <li ng-repeat="result in results.results">{{result}}</li>
+  <li ng-repeat="result in results.results track by $index">{{result}}</li>
 </ul>
